@@ -1,0 +1,23 @@
+﻿<Window x:Class="HelloRemotingServiceClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloRemotingServiceClient"
+        mc:Ignorable="d"
+        Title="MainWindow" MinWidth="300" MaxWidth="800" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" Name="TextBox1" Margin="5"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="Get nessasge" Margin="5" Click="Button_Click"/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Name="TextBlock1" Margin="5" FontSize="15" FontWeight="Bold"  />
+
+    </Grid>
+</Window>
