@@ -38,7 +38,7 @@ namespace Client
                 new EmployeeService.EmployeeServiceClient();
 
             EmployeeService.EmployeeEntity employee = new EmployeeService.EmployeeEntity();
-            employee.Id = Convert.ToInt32(txtID.Text);
+            employee.ID = Convert.ToInt32(txtID.Text);
             employee.Name = txtName.Text;
             employee.Gender = txtGender.Text;
             employee.DateOfBirth = Convert.ToDateTime(txtDateOfBirth.Text);
