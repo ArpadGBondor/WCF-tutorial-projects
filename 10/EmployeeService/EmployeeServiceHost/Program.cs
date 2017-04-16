@@ -45,23 +45,23 @@ namespace EmployeeServiceHost
             //        HourlyPay = 15,
             //        HoursWorked = 4
             //    });
-            var service = new EmployeeService.EmployeeService();
-            for (int i = 0; i < 20; i++)
-            {
-                EmployeeInfo employee = service.GetEmployee(new EmployeeRequest() { EmployeeID = i });
-                if (employee.Type == EntityLayer.EmployeeType.FullTimeEmployee)
-                {
-                    Console.WriteLine("Name: {0}, Salary: {1}", employee.Name, employee.AnnualSalary);
-                }
-                else if (employee.Type == EntityLayer.EmployeeType.PartTimeEmployee)
-                {
-                    Console.WriteLine("Name: {0}, Hourly: {1}", employee.Name, employee.HourlyPay);
-                }
-                else
-                {
-                    Console.WriteLine(" - null - ");
-                }
-            }
+            //var service = new EmployeeService.EmployeeService();
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    EmployeeInfo employee = service.GetEmployee(new EmployeeRequest() { EmployeeID = i });
+            //    if (employee.Type == EntityLayer.EmployeeType.FullTimeEmployee)
+            //    {
+            //        Console.WriteLine("Name: {0}, Salary: {1}", employee.Name, employee.AnnualSalary);
+            //    }
+            //    else if (employee.Type == EntityLayer.EmployeeType.PartTimeEmployee)
+            //    {
+            //        Console.WriteLine("Name: {0}, Hourly: {1}", employee.Name, employee.HourlyPay);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(" - null - ");
+            //    }
+            //}
             if (DataLayer.EmployeeProvider.Test())
             {
                 using (ServiceHost host = new ServiceHost(typeof(EmployeeService.EmployeeService)))
