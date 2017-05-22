@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsServiceHost
+namespace HelloServiceWindowsServiceHost
 {
     static class Program
     {

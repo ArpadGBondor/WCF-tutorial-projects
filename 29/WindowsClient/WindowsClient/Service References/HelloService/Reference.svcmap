@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3737d467-d7dd-47d3-b562-5fa8520b391c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="08ca77cb-2892-4bcd-a336-58dfcaa20aae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://red-lapos/HelloService/HelloService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://red-lapos/HelloServiceISSService/HelloService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="HelloService.xsd" MetadataType="Schema" ID="253fd15f-257b-4333-93f9-f3e3cd4319cf" SourceId="1" SourceUrl="http://red-lapos/HelloService/HelloService.svc?xsd=xsd0" />
-    <MetadataFile FileName="HelloService.wsdl" MetadataType="Wsdl" ID="0041e559-832a-4ceb-ab28-b8e94b58c03b" SourceId="1" SourceUrl="http://red-lapos/HelloService/HelloService.svc?wsdl" />
-    <MetadataFile FileName="HelloService1.xsd" MetadataType="Schema" ID="36d22b06-3fed-4cbb-a627-e80aa0587288" SourceId="1" SourceUrl="http://red-lapos/HelloService/HelloService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HelloService.xsd" MetadataType="Schema" ID="08e77433-285b-421f-af48-35d74c818226" SourceId="1" SourceUrl="http://red-lapos/HelloServiceISSService/HelloService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HelloService1.xsd" MetadataType="Schema" ID="6fdb72a6-bf22-4d2e-b728-6e680acbe98a" SourceId="1" SourceUrl="http://red-lapos/HelloServiceISSService/HelloService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HelloService.wsdl" MetadataType="Wsdl" ID="171ee39f-44a8-4d4f-8bf2-27d5ff4ba992" SourceId="1" SourceUrl="http://red-lapos/HelloServiceISSService/HelloService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

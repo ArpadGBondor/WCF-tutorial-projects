@@ -7,8 +7,8 @@
     <ProjectGuid>{02C3C2C0-7B3F-4415-8143-E807D97DD432}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsServiceHost</RootNamespace>
-    <AssemblyName>WindowsServiceHost</AssemblyName>
+    <RootNamespace>HelloServiceWindowsServiceHost</RootNamespace>
+    <AssemblyName>HelloServiceWindowsServiceHost</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

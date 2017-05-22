@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 
-namespace WindowsServiceHost
+namespace HelloServiceWindowsServiceHost
 {
     public partial class HelloWindowsService : ServiceBase
     {

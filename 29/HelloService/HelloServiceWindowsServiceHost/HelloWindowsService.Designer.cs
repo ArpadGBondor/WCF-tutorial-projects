@@ -1,4 +1,4 @@
-﻿namespace WindowsServiceHost
+﻿namespace HelloServiceWindowsServiceHost
 {
     partial class HelloWindowsService
     {

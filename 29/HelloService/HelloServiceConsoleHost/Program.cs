@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
 
-namespace HelloServiceHost
+namespace HelloServiceConsoleHost
 {
     class Program
     {
