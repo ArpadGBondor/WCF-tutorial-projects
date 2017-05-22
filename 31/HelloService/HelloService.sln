@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloService", "HelloService\HelloService.csproj", "{AB84E4E4-A22C-41F6-A453-29331017C184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceWindowsHost", "HelloServiceWindowsHost\HelloServiceWindowsHost.csproj", "{17F7D834-4804-41BE-A480-9020726AA2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceWindowsServiceHost", "HelloServiceWindowsServiceHost\HelloServiceWindowsServiceHost.csproj", "{02C3C2C0-7B3F-4415-8143-E807D97DD432}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HelloServiceIISHost", "HelloServiceIISHost\", "{F58F54DE-45D4-4F0E-B2DE-BB73B4945A31}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{ab84e4e4-a22c-41f6-a453-29331017c184}|HelloService.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_9583"
+		Debug.AspNetCompiler.PhysicalPath = "HelloServiceIISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9583\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_9583"
+		Release.AspNetCompiler.PhysicalPath = "HelloServiceIISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9583\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "9583"
+		SlnRelativePath = "HelloServiceIISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceConsoleHost", "HelloServiceConsoleHost\HelloServiceConsoleHost.csproj", "{08300A8F-AC0B-4E55-A45F-6A9088439958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB84E4E4-A22C-41F6-A453-29331017C184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB84E4E4-A22C-41F6-A453-29331017C184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB84E4E4-A22C-41F6-A453-29331017C184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB84E4E4-A22C-41F6-A453-29331017C184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F7D834-4804-41BE-A480-9020726AA2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F7D834-4804-41BE-A480-9020726AA2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F7D834-4804-41BE-A480-9020726AA2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F7D834-4804-41BE-A480-9020726AA2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C3C2C0-7B3F-4415-8143-E807D97DD432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C3C2C0-7B3F-4415-8143-E807D97DD432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C3C2C0-7B3F-4415-8143-E807D97DD432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C3C2C0-7B3F-4415-8143-E807D97DD432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58F54DE-45D4-4F0E-B2DE-BB73B4945A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58F54DE-45D4-4F0E-B2DE-BB73B4945A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58F54DE-45D4-4F0E-B2DE-BB73B4945A31}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58F54DE-45D4-4F0E-B2DE-BB73B4945A31}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{08300A8F-AC0B-4E55-A45F-6A9088439958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08300A8F-AC0B-4E55-A45F-6A9088439958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08300A8F-AC0B-4E55-A45F-6A9088439958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08300A8F-AC0B-4E55-A45F-6A9088439958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
