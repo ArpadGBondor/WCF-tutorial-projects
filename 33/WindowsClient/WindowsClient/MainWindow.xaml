@@ -1,0 +1,26 @@
+﻿<Window x:Class="WindowsClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsClient"
+        mc:Ignorable="d"
+        Title="WindowsClient" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListBox Name="listBox1" Grid.Row="0" Margin="5" />
+        <Button Name="btnRequest1" Grid.Row="1" Margin="5" Content="Request Reply Operation" Click="btnRequest1_Click" />
+        <Button Name="btnRequest2" Grid.Row="2" Margin="5" Content="Request Reply Operation - ThrowsException" Click="btnRequest2_Click" />
+        <Button Name="btnOneWay1"  Grid.Row="3" Margin="5" Content="One-way Operation" Click="btnOneWay1_Click" />
+        <Button Name="btnOneWay2"  Grid.Row="4" Margin="5" Content="One-way Operation - ThrowsException" Click="btnOneWay2_Click" />
+        <Button Name="btnClear"    Grid.Row="5" Margin="5" Content="Clear" Click="btnClear_Click"/>
+    </Grid>
+</Window>

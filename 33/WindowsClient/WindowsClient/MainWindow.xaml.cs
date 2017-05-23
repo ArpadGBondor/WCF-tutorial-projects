@@ -38,7 +38,7 @@ namespace WindowsClient
             try
             {
                 Log("Request-Reply Operation Started @ " + DateTime.Now.ToString());
-                // In WPF disableing the button is useless
+                // In WPF disabling the button is useless
                 // btnRequest1.IsEnabled = false;
                 Log(client.RequestReplyOperation());
                 // btnRequest1.IsEnabled = true;
@@ -65,6 +65,36 @@ namespace WindowsClient
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void btnOneWay1_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Log("One-way Operation Started @ " + DateTime.Now.ToString());
+                client.OneWayOperation();
+                Log("One-way Operation Completed @ " + DateTime.Now.ToString());
+                Log("");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnOneWay2_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Log("One-way Operation Started @ " + DateTime.Now.ToString());
+                client.OneWayOperation_ThrowsException();
+                Log("One-way Operation Completed @ " + DateTime.Now.ToString());
+                Log("");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
