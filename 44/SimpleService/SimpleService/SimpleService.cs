@@ -9,14 +9,14 @@ using System.Threading;
 namespace SimpleService
 {
     [ServiceBehavior(
-        ConcurrencyMode = ConcurrencyMode.Single,
-        InstanceContextMode = InstanceContextMode.PerSession)]
+        ConcurrencyMode = ConcurrencyMode.Multiple,
+        InstanceContextMode = InstanceContextMode.PerCall)]
     public class SimpleService : ISimpleService
     {
         // Instance     Concurrency     Binding     Concurrent      Throughput
         // Context      Mode            support     calls           Impact
         // Mode                         session     processed
-        //--------------------------------------------------------------------------
+        //==========================================================================
         // PerCall      Single          No          Yes             Positive
         //--------------------------------------------------------------------------
         // PerCall      Single          Yes         No              Negative
@@ -29,7 +29,19 @@ namespace SimpleService
         // Single       Single          No          No              Negative
         //--------------------------------------------------------------------------
         // Single       Single          Yes         No              Negative
+        //==========================================================================
+        // PerCall      Multiple        No          Yes             Positive
         //--------------------------------------------------------------------------
+        // PerCall      Multiple        Yes         Yes             Positive
+        //--------------------------------------------------------------------------
+        // PerSession   Multiple        No          Yes             Positive
+        //--------------------------------------------------------------------------
+        // PerSession   Multiple        Yes         Yes             Positive
+        //--------------------------------------------------------------------------
+        // Single       Multiple        No          Yes             Positive
+        //--------------------------------------------------------------------------
+        // Single       Multiple        Yes         Yes             Positive
+        //==========================================================================
 
 
 
