@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleService", "SimpleService\SimpleService.csproj", "{9054AD5F-F04D-4D2E-8DA6-615A3FEEA33F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IISHost", "IISHost\", "{1D85EB5F-8280-426A-ACC2-2F797BD412B6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{9054ad5f-f04d-4d2e-8da6-615a3feea33f}|SimpleService.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_10620"
+		Debug.AspNetCompiler.PhysicalPath = "IISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10620\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_10620"
+		Release.AspNetCompiler.PhysicalPath = "IISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10620\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "10620"
+		SlnRelativePath = "IISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9054AD5F-F04D-4D2E-8DA6-615A3FEEA33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9054AD5F-F04D-4D2E-8DA6-615A3FEEA33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9054AD5F-F04D-4D2E-8DA6-615A3FEEA33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9054AD5F-F04D-4D2E-8DA6-615A3FEEA33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D85EB5F-8280-426A-ACC2-2F797BD412B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D85EB5F-8280-426A-ACC2-2F797BD412B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D85EB5F-8280-426A-ACC2-2F797BD412B6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D85EB5F-8280-426A-ACC2-2F797BD412B6}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
